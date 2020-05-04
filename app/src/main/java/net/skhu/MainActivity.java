@@ -1,5 +1,6 @@
 package net.skhu;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -13,14 +14,14 @@ public class MainActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
-        Button exam1 = (Button) findViewById(R.id.exam1);
+
+        Button button = (Button)findViewById(R.id.exam1);
+        button.setOnClickListener(new Button.OnClickListener() {
+            public void onClick(View v) {
+                Intent intent = new 
+            }
+
+        });
     }
 
-    View.OnClickListener listener = new View.OnClickListener() {
-        @Override
-        public void onClick(View view) {
-            Intent intent = new Intent(getApplicationContext(), SubActivity.class);
-            startActivity(intent);
-        }
-    }
 }
