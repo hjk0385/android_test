@@ -5,7 +5,7 @@ import androidx.recyclerview.widget.DefaultItemAnimator;
 import androidx.recyclerview.widget.DividerItemDecoration;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
-import android.os.Bundle; 
+import android.os.Bundle;
 import java.util.ArrayList;
 
 public class Exam3Activity extends AppCompatActivity {
@@ -18,6 +18,7 @@ public class Exam3Activity extends AppCompatActivity {
         arrayList = new ArrayList<String>();
         arrayList.add("one");
         arrayList.add("two");
+
         recyclerView1Adapter = new RecyclerView1Adapter(this, arrayList);
         RecyclerView recyclerView = (RecyclerView) findViewById(R.id.recyclerView);
         recyclerView.addItemDecoration(new DividerItemDecoration(this, DividerItemDecoration.VERTICAL));
