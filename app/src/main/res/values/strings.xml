@@ -2,4 +2,6 @@
     <string name="app_name">Test</string>
     <string name="Exam2">Exam2</string>
     <string name="Exam1">Exam1</string>
+    <string name="Exam3">Exam3</string>
+    <string name="creat">생성</string>
 </resources>
